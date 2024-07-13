@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {};
+const nextConfig = {
+    experimental: {
+        serverComponentsExternalPackages: ["@heroicons/react"],
+      },
+      reactStrictMode: true,
+      swcMinify: true,
+};
 
 export default nextConfig;
